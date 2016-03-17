@@ -11,6 +11,50 @@ body {
 }
 header {
     height: 56px;
+    padding-left: 59px;
+    padding-right: 67px;
+}
+header .actived {
+    color: #e74f4d;
+    border-bottom: 5px solid #e74f4d;
+}
+header h1 {
+    margin: 0;
+    float: left;
+    height: 100%;
+    width: 104px;
+    background: transparent url(../images/logo.png) no-repeat left center;
+    text-indent: -9999px;
+}
+header h1 a {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+header nav {
+    float: right;
+}
+header nav a {
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    color: #7c7a82;
+    font-size: 14px;
+    text-decoration: none;
+}
+header nav a.has-image {
+    color: #e74f4d;
+    position: relative;
+}
+header nav a.has-image::before {
+    content: "";
+    position: absolute;
+    background: transparent url(../images/user.png) no-repeat left top;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%,-50%);
+    width: 14px;
+    height: 17px;
 }
 .banner-container {
     background: transparent url(../images/banner.png) no-repeat top left;
@@ -93,17 +137,19 @@ header {
     position: relative;
     background: #ededec url(../images/books.png) no-repeat center 89px;
 }
-.logo-container h1 {
+.logo-container h2 {
     font: 53.39px/53px "黑体";
     color: #867e7a;
     position: absolute;
     top: 229px;
-    left: 212px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 855px;
     margin: 0;
 }
 .map-container {
     background: transparent url(../images/map.png) no-repeat top left;
-	background-size: 100% auto;
+    background-size: 100% auto;
     min-height: 340px;
     position: relative;
 }
@@ -116,7 +162,7 @@ header {
 .map-container .map-title {
     position: absolute;
     z-index: 99;
-	transform: translateX(-50%);
+    transform: translateX(-50%);
     left: 50%;
     top: 53px;
     color: #fff;
@@ -128,7 +174,7 @@ header {
     position: absolute;
     width: 30px;
     height: 3px;
-	transform: translateX(-50%);
+    transform: translateX(-50%);
     left: 50%;
     top: 84px;
     z-index: 99;
@@ -137,19 +183,21 @@ header {
 }
 .map-container .map-content {
     position: absolute;
-	transform: translateX(-50%);
+    transform: translateX(-50%);
     left: 50%;
     top: 107px;
     font-size: 12px;
     color: #fff;
     line-height: 12px;
-    z-index: 99;	
+    z-index: 99;    
 }
 .map-container form {
     position: absolute;
     z-index: 200;
     top: 172px;
-    left: 127px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 1030px;
 }
 .map-container form fieldset {
     margin: 0;
@@ -573,4 +621,12 @@ header {
 }
 .gray {
     color: #333333;
+}
+.left-right-padding-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.left-right-padding-30 {
+    padding-left: 30px;
+    padding-right: 30px;
 }
