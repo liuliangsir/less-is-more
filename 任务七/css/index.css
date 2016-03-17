@@ -91,7 +91,7 @@ header {
 .logo-container {
     height: 360px;
     position: relative;
-    background: #ededec url(../images/books.png) no-repeat center center;
+    background: #ededec url(../images/books.png) no-repeat center 89px;
 }
 .logo-container h1 {
     font: 53.39px/53px "黑体";
@@ -99,6 +99,7 @@ header {
     position: absolute;
     top: 229px;
     left: 212px;
+    margin: 0;
 }
 .map-container {
     background: transparent url(../images/map.png) no-repeat top left;
@@ -482,13 +483,19 @@ header {
 }
 .volunteer-container fieldset textarea {
     width: 100%;
+    resize: none;
+    padding: 12px 17px;
+    border: none;
+    background-color: #ededee;
 }
 .volunteer-container fieldset input.submit-input {
     font-family: "黑体";
     font-size: 14px;
-    color: #333333;
-    background-color: transparent;
-    border: 1px solid transparent;
+    color: #282828;
+    background-color: #ededee;
+    border: none;
+    height: 40px;
+    width: 100%;
 }
 .contact-container {
     text-align: center;
